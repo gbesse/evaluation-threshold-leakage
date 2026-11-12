@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evaluation-threshold-leakage"
+version = "0.1.0a1"
+description = "FR: Mesurer le biais du choix de seuil sur le test | EN: Measure bias from selecting thresholds on test data | ES: Medir sesgo de elegir umbrales con datos de prueba"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+evaluation-threshold-leakage = "evaluation_threshold_leakage.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["evaluation_threshold_leakage*"]
